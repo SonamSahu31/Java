@@ -9,7 +9,7 @@ public class ImplementPow{
         if(e<0){
             return 1.0 / Power(b, -e);
         }
-        double half = Power(b, e/2);
+        double half = Power(b, e/2); // Recursive call to calculate b^(e/2)
         if(e%2==0){
             return half*half;
         }
@@ -21,7 +21,7 @@ public class ImplementPow{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the base (b) number:");
-        int b = sc.nextInt();
+        double b = sc.nextDouble();
         System.out.println("Enter the exponent (e)number:");
         int e = sc.nextInt();
         double result = Power(b, e);
