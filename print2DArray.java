@@ -5,10 +5,15 @@ public class print2DArray {
         int[][] arr = new int[3][3];
         for(int i=0; i<arr.length; i++){
             for(int j=0; j<arr[i].length; j++){
-                System.out.println("Enter the element at position [" + i + "][" + j + "]:");
+                
                 arr[i][j] = sc.nextInt();
+                System.out.print(arr[i][j] + " ");
             }
-        }
-        System.out.println("The 2D array is:");
+            System.out.println();
+        }   
+        
     }
+    
+        
 }
+
